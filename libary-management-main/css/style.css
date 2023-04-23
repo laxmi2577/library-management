@@ -1,0 +1,246 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.background{
+
+
+    background: url(..);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+nav ul li{
+    list-style-type: none;
+display: inline-block;
+} 
+
+nav ul li:hover
+{
+    background-color:rgb(102, 190, 205);
+}
+
+.btn{
+	height: 200vh;
+    background: rgb(219, 166, 166);
+    transition: 0.5s;
+    
+}
+.bg
+{
+    margin: 0px;
+    padding: 0px;
+    background: url(../img/1.jpg)no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+}
+
+  
+.image
+{
+}
+.cont
+{
+
+	position: absolute;
+	background:url(../img/1.jpg);
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 700px;
+
+	background: rgb(218, 214, 214);
+	padding: 30px;
+	box-sizing: border-box;
+	border :1px solid rgba(0,0,0,.1);
+	box-shadow: 0 5px 10px rgba(0,0,0,.2);
+	
+	
+}
+.cont h1
+{
+	text-align: center;
+	margin: 0 0 40px;
+	padding: 50px;
+	color: rgb(66,133,244);
+	letter-spacing: 2px;
+}
+.cont input
+{
+	padding: 5px;
+	margin-bottom: 30px;
+	width: 60%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border:none;
+	border-bottom: 2px solid #999;
+}
+.cont [type="submit"]
+{
+	border-radius: 25px;
+	font-size: 20px;
+	height: 40px;
+	cursor : pointer;
+	background: rgb(66,133,244);
+	color: #fff;
+	margin-bottom: 0;
+}
+.cont [type="submit"]:hover
+{
+	background: #blue;
+	color: #fff;
+}
+.cont form div
+{
+	position: relative;
+}
+.cont form div label
+{
+	position: absolute;
+	top: 3px;
+	pointer-events: none;
+	left: 0;
+	transition: .5s;
+}
+.cont input:focus ~label,
+.cont input:valid ~label
+{
+	left: 0;
+	top: -20px;
+	color: rgb(66,133,244);
+	font-size: 12px;
+	font-weight: bold;
+}
+.cont input:focus,
+.cont input:valid
+{
+	border-bottom: 2px solid rgb(66,133,244);
+}
+.error_form
+{
+	top: 12px;
+	color: rgb(216, 15, 15);
+    font-size: 15px;
+    font-family: Helvetica;
+}
+
+
+.homeimg{
+	background-color: transparent;
+
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+
+	
+}.text-info
+{
+	align-items: center;
+	justify-content: end;
+}
+
+.con{
+	
+
+
+	position: absolute;
+	top: 68%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 700px;
+
+	background: rgb(218, 214, 214);
+	padding: 30px;
+	box-sizing: border-box;
+	border :1px solid rgba(0,0,0,.1);
+	box-shadow: 0 5px 10px rgba(0,0,0,.2);
+
+}
+.con h1
+{
+	text-align: center;
+	margin: 0 0 40px;
+	padding: 0;
+	color: rgb(66,133,244);
+	letter-spacing: 2px;
+}
+.con input
+{
+	padding: 8px;
+	margin-bottom: 30px;
+	width: 50%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border:none;
+	border-bottom: 2px solid #999;}
+
+	.con input[type="submit"]:hover
+{background: rgb(66,133,244);
+	color: rgb(22, 22, 22);
+}
+.con form div
+{
+	position: relative;
+}
+.con form div label
+{
+	position: absolute;
+	top: 3px;
+	pointer-events: none;
+	left: 0;
+	transition: .5s;
+}
+.con input:focus ~label,
+.con input:valid ~label
+{
+	left: 0;
+	top: -20px;
+	color: rgb(66,133,244);
+	font-size: 12px;
+	font-weight: bold;
+}
+.con input:focus,
+.con input:valid
+{
+	border-bottom: 2px solid rgb(66,133,244);
+}
+.error_form
+{
+	top: 12px;
+	color: rgb(216, 15, 15);
+    font-size: 15px;
+    font-family: Helvetica;
+}
+.view{
+
+	margin: 30px;
+	padding: 30px;
+
+	
+	
+	
+}
+
+	
+h1{
+	text-align: center;
+	margin: 0 0 40px;
+	padding: 0;
+	color: rgb(18, 18, 19);
+	letter-spacing: 2px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+.pink-textarea textarea.md-textarea:focus:not([readonly]) {
+	border-bottom: 1px solid #f48fb1;
+	box-shadow: 0 1px 0 0 #f48fb1;

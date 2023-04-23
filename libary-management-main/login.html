@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<header class="bg-dark" >
+	<div class="row text-white">
+		<div class="col-md-6 col-6 p-3 pl-4">
+		  <img src="img/logo.jpg" height="100" width="100" alt="">
+		</div>
+		<div class="col-md-6 col-6  my-auto ">
+		  <nav class="navbar navbar-expand-lg navbar-light">
+			 
+			  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+				  <li class="nav-item active">
+					<a class="nav-link text-white" href="index.html"><span class="sr-only"></span></a>
+				  </li>
+	  
+				  
+				</ul>
+				
+			  </div>  
+			</nav>
+		</div>
+
+	  </div>
+
+
+  </header>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		$("#email").keyup(function(){
+			if(validateEmail()){
+				
+				$("#email").css("border","2px solid green");
+				
+				$("#emailMsg").html("<p class='text-success'>Validated</p>");
+			}else{
+				
+				$("#email").css("border","2px solid red");
+				$("#emailMsg").html("<p class='text-danger'>Un-validated</p>");
+			}
+			buttonState();
+		});
+	
+		$("#pass").keyup(function(){
+			
+			if(validatePassword()){
+			
+				$("#pass").css("border","2px solid green");
+			
+				$("#passMsg").html("<p class='text-success'>Password validated</p>");
+			}else{
+				$("#pass").css("border","2px solid red");
+				 
+				$("#passMsg").html("<p class='text-danger'>Password not valid</p>");
+			}
+			buttonState();
+		});
+	});
+
+	
+	function validateEmail(){
+		
+		var email=$("#email").val();
+	
+		 var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+		 if(reg.test(email)){
+		 	return true;
+		 }else{
+		 	return false;
+		 }
+
+	}
+	function validatePassword(){
+	
+		var pass=$("#pass").val();
+		
+		if(pass.length > 6){
+			return true;
+		}else{
+			return false;
+		}
+
+	}
+</script>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+		</div>
+		<div class="col-md-4 border shadow-sm bg-light" style="margin-top:8%;padding:10px;">
+			<div class="form-group">
+				<label>Enter email:</label>
+				<input type="email" class="form-control" id="email" placeholder="Enter email" autocomplete="off" name="name" value="">
+				<span id="emailMsg"></span>
+			</div>
+
+			<div class="form-group">
+				<label>Enter password:</label>
+				<input type="password" class="form-control"name="password" value="" minlength="6"  id="pass" placeholder="Enter password" autocomplete="off" name="">
+				<span id="passMsg"></span>
+			</div>
+
+			<div class="form-group">
+				<a href="home.html" class="btn btn-primary btn-block">submitt</a>
+
+			
+				
+			</div>
+			<p>
+				<div id="register-link" class="text-center">
+					<a href="register.html" class="text-info">Register here</a>
+					<hr class="my-4">
+				</div>
+			  </p>
+		</div>
+		<div class="col-md-4">
+		</div>
+	</div>
+</div>
+</body>
+</html> 
+

@@ -1,0 +1,91 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(102, 104, 104);
+}
+a{
+    text-decoration: none;
+}
+.box
+{
+    width: 300px;
+    box-shadow: 2px 2px 30px rgba(red, green, blue, alpha);
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+}
+.slide-image{
+    height: 450px;
+    position: relative;
+}
+.slide-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}.detail-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+.type{
+    display: flex
+  flex-direction: column;
+}
+.type a{
+
+
+  margin: 5px 0px;
+
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  padding-right: 8px;
+}
+.overlay{
+    position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.read-btn{
+    width:160px;
+    height:40px ;
+    display: flex;
+    justify-content: center;
+align-items: center;
+background-color: rgb(8, 8, 8);
+color: tomato;
+
+
+
+
+
+}
+.read-btn:hover{
+    color: thistle;
+    transition: all ease 0.3s;
+}
+
+.overlay{
+    visibility: hidden;
+}.slide-image:hover .overlay
+{
+    visibility: visible;
+    animation: fade 0.5s
+
+} @keyframes fade{
+    0% {
+    opacity: 0;
+    }
+} .item a{
+    display: flex;
+}
